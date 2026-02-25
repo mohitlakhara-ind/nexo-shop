@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="script-src 'self' https://checkout.razorpay.com; script-src-elem 'self' https://checkout.razorpay.com;"
-    />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>Luminary — Premium E-Commerce</title>
+  <meta name="description"
+    content="Luminary is a premium full-stack e-commerce platform. Shop the latest electronics and tech gear with secure checkout, admin dashboard, and a beautiful UI." />
+  <meta name="keywords"
+    content="luminary, e-commerce, online shop, electronics, MERN stack, React, Node.js, MongoDB, full-stack" />
+  <meta name="author" content="Cosmopolitan" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#d97706" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luminary — Premium E-Commerce" />
+  <meta property="og:description"
+    content="Shop the latest electronics on Luminary — a premium MERN stack e-commerce platform." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://luminary-mern.vercel.app" />
+  <meta property="og:image" content="https://luminary-mern.vercel.app/og-image.png" />
+  <meta property="og:site_name" content="Luminary" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luminary — Premium E-Commerce" />
+  <meta name="twitter:description"
+    content="Shop the latest electronics on Luminary — a premium MERN stack e-commerce platform." />
+  <meta name="twitter:image" content="https://luminary-mern.vercel.app/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+
+  <!-- CSP for Razorpay 
+    <meta http-equiv="Content-Security-Policy"
+      content="script-src 'self' https://checkout.razorpay.com; script-src-elem 'self' https://checkout.razorpay.com;" />
     -->
+  <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="manifest" href="/site.webmanifest" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Welcome to MERN Shop</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-  </body>
 </html>

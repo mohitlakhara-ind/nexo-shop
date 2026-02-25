@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="url(#luminaryGrad)"/>
+  <path d="M32 12L35.5 24H48L38 31.5L41.5 44L32 36.5L22.5 44L26 31.5L16 24H28.5L32 12Z" fill="white" fill-opacity="0.95"/>
+  <defs>
+    <linearGradient id="luminaryGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+</svg>
