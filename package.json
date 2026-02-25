@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A premium full-stack e-commerce platform built with the MERN stack.",
   "type": "module",
-  "main": "server.js",
+  "main": "backend/server.js",
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
