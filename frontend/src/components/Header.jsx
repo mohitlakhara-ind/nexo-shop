@@ -40,7 +40,7 @@ const Header = () => {
         <LinkContainer to='/'>
           <Navbar.Brand style={{ fontWeight: 700, letterSpacing: '-0.02em' }}>
             <span style={{ color: '#fbbf24' }}>✦</span>{' '}
-            <span style={{ color: '#fff' }}>Luminary</span>
+            <span style={{ color: '#fff' }}>Nexo</span>
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />

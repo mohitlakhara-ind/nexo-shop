@@ -1,7 +1,7 @@
-# Render deployment config for Luminary backend
+# Render deployment config for Nexo backend
 services:
   - type: web
-    name: luminary-mern-api
+    name: Nexo-mern-api
     runtime: node
     region: singapore
     plan: free

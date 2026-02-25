@@ -12,7 +12,7 @@
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "https://luminary-mern-api.onrender.com/api/$1"
+            "dest": "https://Nexo-mern-api.onrender.com/api/$1"
         },
         {
             "src": "/(.*)",
@@ -20,6 +20,6 @@
         }
     ],
     "env": {
-        "REACT_APP_API_URL": "https://luminary-mern-api.onrender.com"
+        "REACT_APP_API_URL": "https://Nexo-mern-api.onrender.com"
     }
 }

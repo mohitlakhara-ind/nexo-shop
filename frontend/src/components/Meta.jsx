@@ -12,11 +12,11 @@ const Meta = ({ title, description, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: 'Luminary | Premium E-Commerce',
+  title: 'Nexo | Premium E-Commerce',
   description:
-    'Discover and shop the latest electronics, gadgets, and tech gear on Luminary. Enjoy secure checkout, fast shipping, and premium product selection.',
+    'Discover and shop the latest electronics, gadgets, and tech gear on Nexo. Enjoy secure checkout, fast shipping, and premium product selection.',
   keywords:
-    'luminary, electronics, premium, gadgets, smartphones, laptops, online shopping, tech store'
+    'Nexo, electronics, premium, gadgets, smartphones, laptops, online shopping, tech store'
 };
 
 export default Meta;

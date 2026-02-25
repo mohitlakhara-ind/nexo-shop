@@ -1,4 +1,4 @@
-# Luminary ✦
+# Nexo ✦
 
 A premium full-stack **e-commerce platform** built with the MERN stack, featuring user authentication, admin dashboard, product management, and secure checkout.
 
@@ -49,8 +49,8 @@ A premium full-stack **e-commerce platform** built with the MERN stack, featurin
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/YOUR_USERNAME/luminary-mern.git
-cd luminary-mern
+git clone https://github.com/YOUR_USERNAME/Nexo-mern.git
+cd Nexo-mern
 
 # Install backend dependencies
 npm install
@@ -63,7 +63,7 @@ cd frontend && npm install && cd ..
 Create a `.env` file in the root directory:
 ```env
 PORT=5000
-MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/luminary
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/Nexo
 JWT_SECRET=your_super_secret_jwt_key
 NODE_ENV=development
 
@@ -90,13 +90,13 @@ npm run dev
 Frontend at `http://localhost:3000` | API at `http://localhost:5000`
 
 **Admin Credentials (after seeding):**
-- Email: `admin@luminary.com`
+- Email: `admin@Nexo.com`
 - Password: `123456`
 
 ## 📁 Project Structure
 
 ```
-luminary/
+Nexo/
 ├── backend/
 │   ├── controllers/    # Product, Order, User, Upload logic
 │   ├── middleware/     # JWT auth, error handler, admin guard
