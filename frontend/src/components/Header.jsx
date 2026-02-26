@@ -29,18 +29,23 @@ const Header = () => {
 
   return (
     <Navbar
-      bg='dark'
-      variant='dark'
+      bg='light'
+      variant='light'
       expand='md'
       collapseOnSelect
       className='fixed-top z-2'
-      style={{ borderBottom: '1px solid rgba(251,191,36,0.15)' }}
+      style={{
+        background: 'rgba(255, 255, 255, 0.85)',
+        backdropFilter: 'blur(10px)',
+        borderBottom: '1px solid var(--luminary-gray-200)',
+        boxShadow: 'var(--shadow-sm)'
+      }}
     >
       <Container>
         <LinkContainer to='/'>
-          <Navbar.Brand style={{ fontWeight: 700, letterSpacing: '-0.02em' }}>
-            <span style={{ color: '#fbbf24' }}>✦</span>{' '}
-            <span style={{ color: '#fff' }}>Nexo</span>
+          <Navbar.Brand style={{ fontWeight: 800, letterSpacing: '-0.03em', fontSize: '1.5rem', color: '#0a0a0a' }}>
+            <span style={{ color: '#000000' }}>✦</span>{' '}
+            <span style={{ color: '#000000' }}>Luminary</span>
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -54,7 +59,7 @@ const Header = () => {
                 {cartItems.length > 0 && (
                   <Badge
                     pill
-                    style={{ marginLeft: '5px', background: '#fbbf24', color: '#1a1a1a' }}
+                    style={{ marginLeft: '5px', background: 'var(--luminary-primary)', color: 'var(--luminary-white)' }}
                   >
                     <strong>
                       {cartItems.reduce((acc, item) => acc + item.qty, 0)}

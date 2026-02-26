@@ -1,54 +1,198 @@
-main {
-  min-height: 80vh;
-  margin-top: 80px;
+:root {
+  --luminary-black: #0a0a0a;
+  --luminary-white: #ffffff;
+  --luminary-gray-50: #f9fafb;
+  --luminary-gray-100: #f3f4f6;
+  --luminary-gray-200: #e5e7eb;
+  --luminary-gray-300: #d1d5db;
+  --luminary-gray-800: #1f2937;
+  --luminary-gray-900: #111827;
+
+  --luminary-primary: #000000;
+  --luminary-primary-hover: #262626;
+  --luminary-accent: #3b82f6;
+  /* Subtle blue for accents if needed */
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
 }
 
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--luminary-gray-50);
+  color: var(--luminary-gray-900);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  min-height: 80vh;
+  margin-top: 100px;
+}
+
+/* Typography Overrides */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--luminary-black);
+}
+
+/* Bootstrap Button Overrides */
+.btn {
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+.btn-primary,
+.btn-dark,
+.btn-warning {
+  background-color: var(--luminary-primary);
+  color: var(--luminary-white);
+}
+
+.btn-primary:hover,
+.btn-dark:hover,
+.btn-warning:hover {
+  background-color: var(--luminary-primary-hover);
+  color: var(--luminary-white);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Bootstrap Card Overrides */
+.card {
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  background-color: var(--luminary-white);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Input Overrides */
+.form-control {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--luminary-gray-200);
+  padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+  border-color: var(--luminary-gray-900);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, .05);
+}
+
+/* Rating Component */
 .rating span {
   margin: 0.1rem;
 }
 
 .rating svg {
-  color: #f8e825;
+  color: #fbbf24;
+  /* Warm yellow/amber */
 }
 
 .rating-text {
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--luminary-gray-800);
   padding-left: 0.5rem;
 }
 
+/* Product Title Truncation */
 .product-title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Tables */
+.table {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: white;
+  box-shadow: var(--shadow-sm);
 }
 
 table td,
 table th {
   text-align: center;
+  vertical-align: middle;
+  padding: 1rem !important;
 }
 
+table thead th {
+  border-bottom: 2px solid var(--luminary-gray-200);
+  background-color: var(--luminary-gray-50);
+  color: var(--luminary-gray-800);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+/* Reviews section */
 .review {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .review h2 {
-  font-size: 24px;
-  background: #f4f4f4;
-  padding: 10px;
-  border: 1px solid #ddd;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
-.review button {
-  margin-top: 10px;
+.list-group-item {
+  border: 1px solid var(--luminary-gray-200);
+  border-radius: var(--radius-md) !important;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
 }
 
+/* Carousel */
 .carousel-caption {
   position: absolute;
   width: 100%;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 2rem 1rem;
+  border-bottom-left-radius: var(--radius-lg);
+  border-bottom-right-radius: var(--radius-lg);
+}
+
+/* Badges */
+.badge {
+  font-weight: 500;
+  padding: 0.4em 0.8em;
+  border-radius: 9999px;
+  /* Pill */
 }
