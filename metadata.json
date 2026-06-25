@@ -1,0 +1,14 @@
+{
+  "name": "nexo-shop",
+  "description": "A premium full-stack e-commerce platform built with MERN stack - warm amber UI",
+  "topics": [
+    "javascript",
+    "learning",
+    "optimized-portfolio"
+  ],
+  "homepage_url": "https://github.com/mohitlakhara-ind/nexo-shop",
+  "private": false,
+  "has_issues": true,
+  "has_projects": true,
+  "has_wiki": true
+}
